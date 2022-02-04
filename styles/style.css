@@ -1,0 +1,502 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    --myred :    #000;
+    font-family: Old English Text MT;
+}
+
+@import url(//db.onlinewebfonts.com/c/f3258385782c4c96aa24fe8b5d5f9782?family=Old+English+Text+MT);
+
+@font-face {font-family: "Old English Text MT"; src: url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.eot"); src: url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.woff") format("woff"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.svg#Old English Text MT") format("svg"); }
+@font-face {font-family: "Old English Text MT"; src: url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.eot"); src: url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.woff") format("woff"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f3258385782c4c96aa24fe8b5d5f9782.svg#Old English Text MT") format("svg"); }
+.master{
+    background: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.preheader{
+    width: 100%;
+    height: 3vh;
+    color: white;
+    background: rgb(216, 214, 214);
+}
+
+header{
+    z-index: 2;
+    width: 100%;
+    height: 8vh;
+    position: sticky;
+    top: 0px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0px 130px 0px 100px;
+    background: rgb(236, 234, 234);
+}
+
+.vsi{
+    width: 100%;
+    height: 8vh;
+    background: rgb(233, 229, 229);
+    position: absolute;
+    top: 3vh;
+    
+}
+
+
+
+.logo-letter{
+    font-family: Old English Text MT;
+    color: var(--myred);
+    font-size: 2.5vw;
+    outline: black;
+    text-shadow: 2px solid black;
+    margin-left: 15px;
+}
+
+.hleft{
+    display: flex;
+    align-items: center;
+    width: 15%;
+    justify-content: space-between;   
+}
+
+.h-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hmid{
+   
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--myred);
+    width: 40%;
+    
+}
+
+.hmid span nav {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.hmid span nav a {
+    text-decoration: none;
+    color: var(--myred);
+    font-size: 1.5vw;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: none;
+}
+
+.logo img{
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+
+.hright{
+    
+    width: 11%;
+    display: flex;
+    justify-content: space-between;
+}
+.hright button{
+    color: var(--myred);
+    background: none;
+    border: none;
+    font-size: 1.2vw;
+}
+
+
+.hright span{
+    border: 2px solid var(--myred);
+    border-radius: 25px;
+    background: white;
+    width: 60%;
+}
+
+.hright span input{
+    height: 1%;
+    background: none;
+    outline: none;
+    border: none;
+    width: 60%;
+    padding-left: 10px;
+}
+.kan, .keji, .keta, .kerin{
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.arrowLeft, .arrowRight{
+    color: #fff;
+    font-size: 50px;
+    cursor: pointer;
+    top: 400px
+}
+
+.slide{
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+
+}
+
+.slide input{
+    position: relative;
+    top: 70vh;
+    left: 85vh;
+    margin-left: .3vw;
+}
+
+.kan{
+    background: url('../media/images/i10.JPG');
+    background-position: center;
+    background-size: cover;
+    transition: ease-in .5s;
+    /* transition: .4s; */
+}
+
+.keji{
+    background: url('../media/images/i20.JPG');
+    background-position: center;
+}
+
+.keta{
+    background: url('../media/images/crucifidd.jpg');
+    background-position: center;
+}
+
+.keta{
+    background: url('../media/images/i25.jpg');
+    background-position: center;
+}
+.kerin{
+    background: url('../media/images/i18.jpg');
+    background-position: center;
+}
+
+.block2 div{
+    background: brown;
+}
+
+.block2{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 10px;
+    box-sizing: border-box;
+    width: 97.6%;
+    height: 60vh;
+    margin: auto;
+    margin-bottom: 2vh;
+}
+
+.block2 div:nth-child(1):hover + .block2 div:nth-child(1) div{
+    transition: ease-in 2s;
+    background: darkkhaki;
+}
+.jum{
+    
+    width: 30%;
+    height: 5vh;
+    border-radius: 25px;
+   
+    font-size: 2vmin;
+    position: relative;
+    top: 80%;
+    left: 35%;
+}
+
+.jum button{
+    background: black;
+    color: white;
+    border: none;
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.block2 div:nth-child(1){
+    padding: 0;
+    background: skyblue;
+    background-image: url(../media/images/i22.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.block2 div:nth-child(2){
+    padding: 0;
+    background: skyblue;
+    background-image: url(../media/images/i16.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.block2 div:nth-child(3){
+    padding: 0;
+    background: skyblue;
+    background-image: url(../media/images/i25.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.block3{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 4px;
+    margin-bottom: 2vh;
+    height: 70vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-repeat: no-repeat;   
+    scrollbar-width: 1px;
+}
+
+.block3 div{
+   width: 30vw; 
+}
+ 
+.aright,.aleft{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 4vw;
+    cursor: pointer;
+}
+
+.aright{
+    position: absolute;
+    top: 115vh;
+    left: 80vw;
+}
+
+.aleft{
+    position: absolute;
+    left: 20vw;
+    top: 115vh
+} 
+
+
+.cl1{
+    padding: 0;
+    background: skyblue;
+    background-image: url(../media/images/i19.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ipl{
+    color: white;
+    width: 10%;
+    position: relative;
+    top: 45vh;
+    left: 1vw;
+}
+
+.cl2{
+    padding: 0;
+    background: skyblue;
+    background-image: url(../media/images/i13.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cl3{
+    padding: 0;
+    background: skyblue;
+    background-image: url(../media/images/i21.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cl4{
+    padding: 0;
+    background: skyblue;
+    background-image: url(../media/images/i24.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cl5{
+    padding: 0;
+    background: skyblue;
+    background-image: url(../media/images/i11.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.cl6{
+    padding: 0;
+    background: skyblue;
+    background-image: url(../media/images/i13.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.item1,.item2,.item3, .item4, .item5, .item6{
+    
+    display: grid;
+    grid-template-rows: 90% 10%;
+    gap: 1vh;
+}
+
+.ptag{
+    background: #fff;
+    color: #000;
+    text-align: center;
+}
+
+.mailing{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 2vw;
+    background:gray;
+    color: #fff;
+    height: 20vh;
+    width: 97.6%;
+    margin: auto;
+    margin-bottom: 2vh;
+}
+
+.mailtext{
+   text-align: center;
+}
+
+.mailaction{
+    height: 80%;
+    padding-top: 5vh;
+    
+}
+.mailbox{
+    width: 50%;
+    height: 50%;
+}
+footer{
+    width: 100%;
+    height: 30vh;
+    background: rgb(68, 65, 65) ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2vw;
+}
+
+footer div:nth-child(1), footer div:nth-child(2),footer div:nth-child(3){
+    width: 20vw;
+    height: 90%;    
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 1vw;
+    
+}
+
+footer div:nth-child(4){
+    width: 20vw;
+    height: 90%;
+    display: flex;
+}
+
+footer div:nth-child(1) a, footer div:nth-child(2) a,footer div:nth-child(3) a{
+    color: black;
+    text-decoration: none;
+    
+}
+
+footer div h3{
+    margin-bottom: 1vh;
+}
+footer div:nth-child(4) a{
+    background: white;
+    color: black;
+    font-size: 1.5vw;
+    border-radius: 50%;
+    height: 3vw;
+    width: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5vw;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+.finl{
+    width: 97.6%;
+    margin: auto;
+    height: 85vh;
+    background: white;
+    margin-bottom: 2vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+}
+
+.lonly{
+    grid-row: 1/3;
+    background-image: url('../media/images/i12.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.lonly:hover{
+    background-image: url('../media/images/i26.jpg');
+    transition: ease-in .5s;
+}
+.rt{
+
+    background-image: url('../media/images/i14.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rb{
+    grid-column: 2/3;
+    
+    background-image: url('../media/images/i20.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
